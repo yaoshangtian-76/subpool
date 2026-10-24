@@ -1,0 +1,48 @@
+name: update
+
+on:
+  schedule:
+    - cron: "0 */2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: install deps
+        run: |
+          pip install pyyaml
+          mkdir -p runtime
+          V=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | grep -o '"tag_name": *"[^"]*"' | head -1 | cut -d'"' -f4)
+          echo "mihomo $V"
+          curl -sL -o /tmp/m.gz "https://github.com/MetaCubeX/mihomo/releases/download/${V}/mihomo-linux-amd64-${V}.gz"
+          gunzip -f /tmp/m.gz
+          mv /tmp/m runtime/mihomo
+          chmod +x runtime/mihomo
+
+      - name: build
+        env:
+          SUBS: ${{ secrets.SUBS }}
+        run: python scripts/build.py
+
+      - name: push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A output README.md
+          git diff --staged --quiet || git commit -m "update $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
