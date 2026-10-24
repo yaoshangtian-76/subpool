@@ -1,3 +1,3 @@
-candidates=662
-alive=77
-updated=2026-10-24 17:20 UTC
+candidates=644
+alive=67
+updated=2026-10-24 20:35 UTC
