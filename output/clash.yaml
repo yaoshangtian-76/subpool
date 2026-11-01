@@ -5,18 +5,7 @@ mode: rule
 log-level: warning
 proxies:
 - type: vless
-  server: 104.20.5.134
-  port: 8080
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  udp: true
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-  name: N001-48ms
-- type: vless
-  server: 104.20.61.103
+  server: 172.64.146.66
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   udp: true
@@ -26,12 +15,12 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /fp=chrome
     headers:
       Host: ccc.010304.xyz
-  name: N002-49ms
+  name: N001-127ms
 - type: vless
-  server: 104.18.35.86
+  server: 104.20.5.134
   port: 8080
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   udp: true
@@ -40,23 +29,94 @@ proxies:
     path: /sg-melbi
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-  name: N003-62ms
-- type: vmess
-  server: cf.090227.xyz
+  name: N002-129ms
+- type: vless
+  server: 43.153.121.144
   port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  uuid: df63ee5d-9530-464d-bb1c-ca1fa00e8b98
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  skip-cert-verify: true
+  reality-opts:
+    public-key: -6_eN_0VKwqVaYN_jU9WdQ9yEpiLGvJQffhGThYLqGQ
+    short-id: c2f1c482d8d339a5
+  client-fingerprint: chrome
+  name: N003-147ms
+- type: vmess
+  server: Rib9JXAYoqjGN2KW.v.3dns.vip
+  port: 443
+  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
   alterId: 0
   cipher: auto
   udp: true
   network: ws
   ws-opts:
-    path: /ws?ed=2048
+    path: /ws-vmess
     headers:
-      Host: vmess.lbw666.dpdns.org
+      Host: Rib9JXAYoqjGN2KW.v.3dns.vip
   tls: true
-  servername: vmess.lbw666.dpdns.org
+  servername: Rib9JXAYoqjGN2KW.v.3dns.vip
   skip-cert-verify: true
-  name: N004-78ms
+  name: N004-157ms
+- type: vless
+  server: 104.26.13.31
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  name: N005-165ms
+- type: vless
+  server: 199.232.78.160
+  port: 443
+  uuid: 780aa2f6-1a02-4fa2-bcd0-fa7d469bdff7
+  udp: true
+  tls: true
+  servername: firefox.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    headers:
+      Host: copy_az_channel_NUFiLTER_10i.global.ssl.fastly.net.
+  name: N006-279ms
+- type: vmess
+  server: 188.114.96.1
+  port: 443
+  uuid: 80be2deb-3b27-4775-9bd1-7f2a2b9c261b
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.windowsmsidownloads.com
+  tls: true
+  servername: www.windowsmsidownloads.com
+  skip-cert-verify: true
+  name: N007-338ms
+- type: vless
+  server: ghosts-spasm.quick-cdn.net
+  port: 443
+  uuid: b7eb28c2-9bd0-4c53-859c-dc0646288b8c
+  udp: true
+  tls: true
+  servername: ghosts-spasm.quick-cdn.net
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ghosts-spasm.quick-cdn.net
+  name: N008-339ms
 - type: vmess
   server: www.windowsmsidownloads.com
   port: 443
@@ -72,9 +132,39 @@ proxies:
   tls: true
   servername: www.windowsmsidownloads.com
   skip-cert-verify: true
-  name: N005-158ms
+  name: N009-342ms
 - type: vless
-  server: wwww.qarvian.ir
+  server: grimness-backlogs.cdn-content.com
+  port: 443
+  uuid: 0097844e-b939-4d50-93f3-591debdceb55
+  udp: true
+  tls: true
+  servername: grimness-backlogs.cdn-content.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: grimness-backlogs.cdn-content.com
+  name: N010-364ms
+- type: vless
+  server: 151.101.65.242
+  port: 443
+  uuid: 57a8ea50-1a8d-4e9f-b6e8-e991a9914a8a
+  udp: true
+  tls: true
+  servername: ghosts-spasm.quick-cdn.net
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ghosts-spasm.quick-cdn.net
+  name: N011-369ms
+- type: vless
+  server: www.qarvian.ir
   port: 443
   uuid: 780aa2f6-1a02-4fa2-bcd0-fa7d469bdff7
   udp: true
@@ -84,10 +174,93 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /?TELEGRAM--FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE-FaraGATE--TELEGRAM
     headers:
-      Host: copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.
-  name: N006-168ms
+      Host: copy_az_channel_NUFiLTER_7i.global.ssl.fastly.net.
+  name: N012-421ms
+- type: hysteria2
+  server: nlll.obxodvpn.us
+  port: 443
+  password: c9aca131-c6a4-4518-9d7d-be52a60b4a3f
+  sni: nl1.obxodvpn.us
+  skip-cert-verify: true
+  udp: true
+  name: N013-432ms
+- type: vless
+  server: grimness-backlogs.cdn-content.com
+  port: 443
+  uuid: 68013563-ae18-40bc-9d6b-d9ef0fd5929a
+  udp: true
+  tls: true
+  servername: grimness-backlogs.cdn-content.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: grimness-backlogs.cdn-content.com
+  name: N014-436ms
+- type: vless
+  server: adheres-scruple.quick-cdn.net
+  port: 443
+  uuid: d78a47b6-dbd2-4ed1-8749-17a22dbe8c3e
+  udp: true
+  tls: true
+  servername: adheres-scruple.quick-cdn.net
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: adheres-scruple.quick-cdn.net
+  name: N015-439ms
+- type: vless
+  server: minimize-evenness.cdn-content.com
+  port: 443
+  uuid: 5fccaf5f-6cc7-46a1-8a41-03c0a4231e6c
+  udp: true
+  tls: true
+  servername: minimize-evenness.cdn-content.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: minimize-evenness.cdn-content.com
+  name: N016-465ms
+- type: vless
+  server: minimize-evenness.cdn-content.com
+  port: 443
+  uuid: c2917886-1bf3-4588-913f-8909a4b40792
+  udp: true
+  tls: true
+  servername: minimize-evenness.cdn-content.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: minimize-evenness.cdn-content.com
+  name: N017-497ms
+- type: vless
+  server: adheres-scruple.quick-cdn.net
+  port: 443
+  uuid: 916e4382-273b-4935-b0bc-ca7cc8eabea7
+  udp: true
+  tls: true
+  servername: adheres-scruple.quick-cdn.net
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: adheres-scruple.quick-cdn.net
+  name: N018-500ms
 - type: vless
   server: 199.232.239.239
   port: 443
@@ -102,58 +275,9 @@ proxies:
     path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
     headers:
       Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
-  name: N007-348ms
-- type: ss
-  server: 202.50.253.63
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  name: N008-362ms
-- type: ss
-  server: 202.50.253.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  name: N009-370ms
-- type: ss
-  server: 202.50.253.36
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  name: N010-374ms
-- type: ss
-  server: 202.50.253.45
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  name: N011-378ms
-- type: ss
-  server: 202.50.253.90
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  name: N012-379ms
-- type: ss
-  server: 202.50.253.99
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  name: N013-389ms
-- type: ss
-  server: 202.50.253.72
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  name: N014-396ms
+  name: N019-507ms
 - type: trojan
-  server: 185.18.250.252
+  server: 165.215.250.14
   port: 443
   password: humanity
   udp: true
@@ -164,7 +288,357 @@ proxies:
     path: /assignment
     headers:
       Host: ''
-  name: N015-420ms
+  name: N020-594ms
+- type: trojan
+  server: ench-snet-app.w-ctrip.cn
+  port: 54815
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  udp: true
+  skip-cert-verify: true
+  sni: cm.g.doubleclick.net
+  name: N021-614ms
+- type: trojan
+  server: ench-snet-app.w-ctrip.cn
+  port: 22003
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  udp: true
+  skip-cert-verify: true
+  sni: cm.g.doubleclick.net
+  name: N022-615ms
+- type: vless
+  server: minimize-evenness.cdn-content.com
+  port: 443
+  uuid: daed3ca3-6b04-44e3-bd55-a9995e88d70b
+  udp: true
+  tls: true
+  servername: minimize-evenness.cdn-content.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: minimize-evenness.cdn-content.com
+  name: N023-641ms
+- type: vless
+  server: piracy-android.video-streams.org
+  port: 443
+  uuid: f2a7b23e-6ec3-432b-8381-5219d80f606f
+  udp: true
+  tls: true
+  servername: piracy-android.video-streams.org
+  skip-cert-verify: true
+  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: piracy-android.video-streams.org
+  name: N024-648ms
+- type: ss
+  server: 202.50.253.54
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+  name: N025-655ms
+- type: vless
+  server: 151.101.161.242
+  port: 443
+  uuid: f80cfcb4-9bd1-4a0d-a50b-28e3eea107d8
+  udp: true
+  tls: true
+  servername: bounded-crammed.video-streams.org
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: bounded-crammed.video-streams.org
+  name: N026-673ms
+- type: vless
+  server: minimize-evenness.cdn-content.com
+  port: 443
+  uuid: a97b4f58-0d47-416f-9ecd-dfdf20f31bf7
+  udp: true
+  tls: true
+  servername: minimize-evenness.cdn-content.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: minimize-evenness.cdn-content.com
+  name: N027-699ms
+- type: vless
+  server: 185.184.122.157
+  port: 443
+  uuid: 9c55c7eb-d53e-40fa-a0c9-e25d2a345073
+  udp: true
+  tls: true
+  servername: se-sto.862400.xyz
+  skip-cert-verify: true
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: se-sto.862400.xyz
+  name: N028-717ms
+- type: vless
+  server: wwww.qarvian.ir
+  port: 443
+  uuid: 780aa2f6-1a02-4fa2-bcd0-fa7d469bdff7
+  udp: true
+  tls: true
+  servername: cdn.akamai.steamstatic.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.
+  name: N029-745ms
+- type: vless
+  server: 23.94.123.231
+  port: 443
+  uuid: 9c55c7eb-d53e-40fa-a0c9-e25d2a345073
+  udp: true
+  tls: true
+  servername: se-sto.862400.xyz
+  skip-cert-verify: true
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: se-sto.862400.xyz
+  name: N030-858ms
+- type: trojan
+  server: 138.68.131.253
+  port: 443
+  password: humanity
+  udp: true
+  skip-cert-verify: true
+  sni: www.pleadcourt.org
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: ''
+  name: N031-894ms
+- type: vless
+  server: piracy-android.video-streams.org
+  port: 443
+  uuid: 72a258a9-281d-41ae-a9d9-2247064923e0
+  udp: true
+  tls: true
+  servername: piracy-android.video-streams.org
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: piracy-android.video-streams.org
+  name: N032-997ms
+- type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.67.8.205
+  name: N033-997ms
+- type: ss
+  server: 46.17.46.27
+  port: 18443
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  udp: true
+  name: N034-1013ms
+- type: trojan
+  server: 82.117.245.125
+  port: 2053
+  password: humanity
+  udp: true
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: ''
+  name: N035-1102ms
+- type: trojan
+  server: ench-snet-app.w-ctrip.cn
+  port: 26429
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  udp: true
+  skip-cert-verify: true
+  sni: cm.g.doubleclick.net
+  name: N036-1104ms
+- type: vmess
+  server: 38.107.234.57
+  port: 80
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 38.107.234.57
+  name: N037-1188ms
+- type: trojan
+  server: 104.17.155.44
+  port: 443
+  password: humanity
+  udp: true
+  skip-cert-verify: true
+  sni: www.cordweave.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: ''
+  name: N038-1256ms
+- type: vless
+  server: 157.22.240.20
+  port: 443
+  uuid: f28ce4eb-62cd-45f5-b3b3-be1c1a95e335
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yandex.ru
+  skip-cert-verify: true
+  reality-opts:
+    public-key: T1BWBw3lq9G1LiQ7eQSPfdNQic7bUMEbdFNJBewAwB8
+    short-id: 6ad3c0f1e9b2478a
+  client-fingerprint: firefox
+  name: N039-1291ms
+- type: vmess
+  server: 156.245.232.239
+  port: 35043
+  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: www.pubgmobile.com
+  name: N040-1367ms
+- type: trojan
+  server: ench-snet-app.w-ctrip.cn
+  port: 38963
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  udp: true
+  skip-cert-verify: true
+  sni: cm.g.doubleclick.net
+  name: N041-1443ms
+- type: vless
+  server: 94.43.238.112
+  port: 2053
+  uuid: 9c55c7eb-d53e-40fa-a0c9-e25d2a345073
+  udp: true
+  tls: true
+  servername: jp-osa.862400.xyz
+  skip-cert-verify: true
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: jp-osa.862400.xyz
+  name: N042-1468ms
+- type: trojan
+  server: ench-snet-app.w-ctrip.cn
+  port: 30298
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  udp: true
+  skip-cert-verify: true
+  sni: cm.g.doubleclick.net
+  name: N043-1557ms
+- type: ss
+  server: 202.50.253.45
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+  name: N044-1643ms
+- type: trojan
+  server: ench-snet-app.w-ctrip.cn
+  port: 22100
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  udp: true
+  skip-cert-verify: true
+  sni: cm.g.doubleclick.net
+  name: N045-1703ms
+- type: vless
+  server: 83.147.241.197
+  port: 443
+  uuid: 9c55c7eb-d53e-40fa-a0c9-e25d2a345073
+  udp: true
+  tls: true
+  servername: se-sto.862400.xyz
+  skip-cert-verify: true
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: se-sto.862400.xyz
+  name: N046-1784ms
+- type: ss
+  server: 202.50.253.90
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+  name: N047-2131ms
+- type: vless
+  server: 87.242.119.253
+  port: 443
+  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+  udp: true
+  tls: true
+  servername: hvtlr-ru-47sb.fade.mom
+  skip-cert-verify: true
+  client-fingerprint: qq
+  name: N048-2685ms
+- type: hysteria2
+  server: starlink-ft.251313.xyz
+  port: 443
+  password: https://xship.top
+  sni: xship.top
+  skip-cert-verify: true
+  udp: true
+  name: N049-2723ms
+- type: ss
+  server: 202.50.253.99
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+  name: N050-2749ms
+- type: ss
+  server: 202.50.253.72
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+  name: N051-3170ms
 - type: vmess
   server: guanwang.awsno.com
   port: 443
@@ -180,138 +654,165 @@ proxies:
   tls: true
   servername: guanwang.awsno.com
   skip-cert-verify: true
-  name: N016-489ms
-- type: trojan
-  server: 172.67.203.46
-  port: 443
-  password: humanity
-  udp: true
-  skip-cert-verify: true
-  sni: www.cordweave.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.cordweave.com
-  name: N017-508ms
-- type: vless
-  server: 5.129.249.65
-  port: 443
-  uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
-  udp: true
-  tls: true
-  servername: rue.tems.bet
-  skip-cert-verify: true
-  reality-opts:
-    public-key: iT-HgkPRUHl7Tm-LUWAGD-zoNoZSkVc-M9sscIIomHY
-    short-id: a62228a1c8b3378f
-  client-fingerprint: firefox
-  name: N018-766ms
+  name: N052-3256ms
 - type: vmess
-  server: 158.160.180.165
-  port: 24212
-  uuid: c58c1205-b308-416f-8503-c04557abf93d
+  server: 104.17.77.77
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
   cipher: auto
   udp: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
   tls: true
-  servername: 158.160.180.165
+  servername: v2ray1.dozapp.xyz
   skip-cert-verify: true
-  name: N019-793ms
-- type: vless
-  server: 95.56.251.12
-  port: 47443
-  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: kz1.waspnest.space
-  skip-cert-verify: true
-  reality-opts:
-    public-key: z1GSwCEACvO9RLcMVpcURiT8er4oeIdeSJhraw_0cGU
-    short-id: ae97223a8f799877
-  client-fingerprint: firefox
-  name: N020-1107ms
+  name: N053-3940ms
 - type: vmess
-  server: 51.83.6.5
-  port: 20250
-  uuid: de883d6d-4099-41bc-ba86-82ffed64a380
+  server: 172.67.167.78
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   alterId: 0
-  cipher: none
+  cipher: auto
   udp: true
-  name: N021-1402ms
-- type: vless
-  server: 2.26.6.1
-  port: 2087
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  udp: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
   tls: true
-  servername: 2.26.6.1
+  servername: v2ray1.dozapp.xyz
   skip-cert-verify: true
-  name: N022-2198ms
-- type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: none
+  name: N054-4002ms
+- type: ss
+  server: 202.50.253.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  name: N023-4833ms
+  name: N055-4464ms
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
-  - N001-48ms
-  - N002-49ms
-  - N003-62ms
-  - N004-78ms
-  - N005-158ms
-  - N006-168ms
-  - N007-348ms
-  - N008-362ms
-  - N009-370ms
-  - N010-374ms
-  - N011-378ms
-  - N012-379ms
-  - N013-389ms
-  - N014-396ms
-  - N015-420ms
-  - N016-489ms
-  - N017-508ms
-  - N018-766ms
-  - N019-793ms
-  - N020-1107ms
-  - N021-1402ms
-  - N022-2198ms
-  - N023-4833ms
+  - N001-127ms
+  - N002-129ms
+  - N003-147ms
+  - N004-157ms
+  - N005-165ms
+  - N006-279ms
+  - N007-338ms
+  - N008-339ms
+  - N009-342ms
+  - N010-364ms
+  - N011-369ms
+  - N012-421ms
+  - N013-432ms
+  - N014-436ms
+  - N015-439ms
+  - N016-465ms
+  - N017-497ms
+  - N018-500ms
+  - N019-507ms
+  - N020-594ms
+  - N021-614ms
+  - N022-615ms
+  - N023-641ms
+  - N024-648ms
+  - N025-655ms
+  - N026-673ms
+  - N027-699ms
+  - N028-717ms
+  - N029-745ms
+  - N030-858ms
+  - N031-894ms
+  - N032-997ms
+  - N033-997ms
+  - N034-1013ms
+  - N035-1102ms
+  - N036-1104ms
+  - N037-1188ms
+  - N038-1256ms
+  - N039-1291ms
+  - N040-1367ms
+  - N041-1443ms
+  - N042-1468ms
+  - N043-1557ms
+  - N044-1643ms
+  - N045-1703ms
+  - N046-1784ms
+  - N047-2131ms
+  - N048-2685ms
+  - N049-2723ms
+  - N050-2749ms
+  - N051-3170ms
+  - N052-3256ms
+  - N053-3940ms
+  - N054-4002ms
+  - N055-4464ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 100
   proxies:
-  - N001-48ms
-  - N002-49ms
-  - N003-62ms
-  - N004-78ms
-  - N005-158ms
-  - N006-168ms
-  - N007-348ms
-  - N008-362ms
-  - N009-370ms
-  - N010-374ms
-  - N011-378ms
-  - N012-379ms
-  - N013-389ms
-  - N014-396ms
-  - N015-420ms
-  - N016-489ms
-  - N017-508ms
-  - N018-766ms
-  - N019-793ms
-  - N020-1107ms
-  - N021-1402ms
-  - N022-2198ms
-  - N023-4833ms
+  - N001-127ms
+  - N002-129ms
+  - N003-147ms
+  - N004-157ms
+  - N005-165ms
+  - N006-279ms
+  - N007-338ms
+  - N008-339ms
+  - N009-342ms
+  - N010-364ms
+  - N011-369ms
+  - N012-421ms
+  - N013-432ms
+  - N014-436ms
+  - N015-439ms
+  - N016-465ms
+  - N017-497ms
+  - N018-500ms
+  - N019-507ms
+  - N020-594ms
+  - N021-614ms
+  - N022-615ms
+  - N023-641ms
+  - N024-648ms
+  - N025-655ms
+  - N026-673ms
+  - N027-699ms
+  - N028-717ms
+  - N029-745ms
+  - N030-858ms
+  - N031-894ms
+  - N032-997ms
+  - N033-997ms
+  - N034-1013ms
+  - N035-1102ms
+  - N036-1104ms
+  - N037-1188ms
+  - N038-1256ms
+  - N039-1291ms
+  - N040-1367ms
+  - N041-1443ms
+  - N042-1468ms
+  - N043-1557ms
+  - N044-1643ms
+  - N045-1703ms
+  - N046-1784ms
+  - N047-2131ms
+  - N048-2685ms
+  - N049-2723ms
+  - N050-2749ms
+  - N051-3170ms
+  - N052-3256ms
+  - N053-3940ms
+  - N054-4002ms
+  - N055-4464ms
 rules:
 - MATCH,PROXIES
