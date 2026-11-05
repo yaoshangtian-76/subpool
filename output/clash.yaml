@@ -4,14 +4,54 @@ allow-lan: false
 mode: rule
 log-level: warning
 proxies:
+- type: vless
+  server: 156.229.167.109
+  port: 8443
+  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
+  udp: true
+  tls: true
+  servername: github.githubassets.com
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
+    short-id: 4ad2e4e660550e43
+  client-fingerprint: chrome
+  name: N001-71ms
+- type: vless
+  server: 104.18.109.147
+  port: 2052
+  uuid: c29d39bd-92a4-45db-bb61-56013998617c
+  udp: true
+  network: ws
+  ws-opts:
+    path: /Telegram-XV2ry2?ed=2048
+    headers:
+      Host: www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com
+  name: N002-121ms
 - type: hysteria2
-  server: 129.146.124.201
-  port: 51000
-  password: 1d491f8c-ccaa-43e1-b62d-f255c7832e27
-  sni: cn.cremedelamer.com
+  server: starlink-ft.251313.xyz
+  port: 443
+  password: https://xship.best
+  sni: xship.top
   skip-cert-verify: true
   udp: true
-  name: N001-123ms
+  name: N003-156ms
+- type: vmess
+  server: 172.64.229.21
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: true
+  name: N004-229ms
 - type: vmess
   server: 104.17.136.198
   port: 443
@@ -27,20 +67,20 @@ proxies:
   tls: true
   servername: vmess.lbw666.dpdns.org
   skip-cert-verify: true
-  name: N002-177ms
-- type: vless
-  server: 156.229.167.109
-  port: 8443
-  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
+  name: N005-232ms
+- type: vmess
+  server: 188.114.97.6
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
-  servername: github.githubassets.com
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
-    short-id: 4ad2e4e660550e43
-  client-fingerprint: chrome
-  name: N003-202ms
+  network: ws
+  ws-opts:
+    path: /ws?ed
+    headers:
+      Host: vmess.lbw666.dpdns.org
+  name: N006-301ms
 - type: hysteria2
   server: 13.143.189.147
   port: 4444
@@ -48,7 +88,7 @@ proxies:
   sni: pl2.nexfile.net
   skip-cert-verify: true
   udp: true
-  name: N004-287ms
+  name: N007-320ms
 - type: hysteria2
   server: pl2.nexfile.net
   port: 4444
@@ -56,194 +96,7 @@ proxies:
   sni: pl2.nexfile.net
   skip-cert-verify: true
   udp: true
-  name: N005-290ms
-- type: ss
-  server: 202.50.253.36
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  name: N006-413ms
-- type: hysteria2
-  server: starlink-ft.251313.xyz
-  port: 443
-  password: https://xship.best
-  sni: xship.top
-  skip-cert-verify: true
-  udp: true
-  name: N007-418ms
-- type: ss
-  server: 202.50.253.63
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  name: N008-423ms
-- type: ss
-  server: 202.50.253.72
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  name: N009-424ms
-- type: ss
-  server: 202.50.253.45
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  name: N010-426ms
-- type: vless
-  server: edge.bookmai.com
-  port: 443
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: mother-earth.fyi
-  skip-cert-verify: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  client-fingerprint: chrome
-  name: N011-458ms
-- type: ss
-  server: 202.50.253.27
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  name: N012-477ms
-- type: ss
-  server: 202.50.253.54
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-  name: N013-480ms
-- type: vless
-  server: 45.192.248.29
-  port: 8443
-  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
-  udp: true
-  tls: true
-  servername: github.githubassets.com
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
-    short-id: 4ad2e4e660550e43
-  client-fingerprint: chrome
-  name: N014-560ms
-- type: vmess
-  server: 138.199.55.230
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: true
-  name: N015-572ms
-- type: vless
-  server: 72.249.201.21
-  port: 21899
-  uuid: fb69a6b9-980c-48c2-a94f-5f95868a2d2a
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  skip-cert-verify: true
-  reality-opts:
-    public-key: kvLUYW6fwHXutu8Z4On6mi61kjslCyCc8ErFffUM1D0
-    short-id: dedce016e3671418
-  client-fingerprint: chrome
-  name: N016-648ms
-- type: vmess
-  server: 132.145.80.230
-  port: 80
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 132.145.80.230
-  name: N017-729ms
-- type: vless
-  server: 134.255.211.36
-  port: 443
-  uuid: c5f59ef3-9540-49fa-bd1e-c6c2f79df49a
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: sg-sin.probe.geomyip.com
-  skip-cert-verify: true
-  reality-opts:
-    public-key: KcI3PoYu2yF7whv-e0C7JnRyUoUiUDu6tOlUBPYYbCk
-    short-id: 2e96bf6afa823abb
-  client-fingerprint: chrome
-  name: N018-805ms
-- type: vmess
-  server: www.shopify.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
-  tls: true
-  servername: guanwang.awsno.com
-  skip-cert-verify: true
-  name: N019-848ms
-- type: vmess
-  server: 47.244.120.197
-  port: 23026
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: 47.244.120.197
-  name: N020-860ms
-- type: vless
-  server: 60.248.219.53
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  udp: true
-  tls: true
-  servername: ty986gfazs.cainiaohub.xyz
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
-  name: N021-861ms
-- type: vless
-  server: 59.125.69.23
-  port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  udp: true
-  tls: true
-  servername: ty986gfazs.cainiaohub.xyz
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
-  name: N022-864ms
+  name: N008-334ms
 - type: vmess
   server: 172.67.190.164
   port: 443
@@ -259,25 +112,237 @@ proxies:
   tls: true
   servername: guanwang.awsno.com
   skip-cert-verify: true
-  name: N023-950ms
-- type: ss
-  server: 46.17.46.27
-  port: 18443
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  name: N009-347ms
+- type: vmess
+  server: www.shopify.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
   udp: true
-  name: N024-995ms
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+  tls: true
+  servername: guanwang.awsno.com
+  skip-cert-verify: true
+  name: N010-383ms
+- type: vmess
+  server: 172.66.203.67
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: true
+  name: N011-409ms
+- type: vmess
+  server: www.windowsmsidownloads.com
+  port: 443
+  uuid: 80be2deb-3b27-4775-9bd1-7f2a2b9c261b
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.windowsmsidownloads.com
+  tls: true
+  servername: www.windowsmsidownloads.com
+  skip-cert-verify: true
+  name: N012-455ms
+- type: hysteria2
+  server: 144.24.109.215
+  port: 51000
+  password: d105c6ae-621b-47c1-b85b-075fd6a39aca
+  sni: cn.cremedelamer.com
+  skip-cert-verify: true
+  udp: true
+  name: N013-488ms
+- type: ss
+  server: 202.50.253.27
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+  name: N014-493ms
+- type: ss
+  server: 202.50.253.99
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+  name: N015-494ms
+- type: ss
+  server: 202.50.253.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+  name: N016-494ms
+- type: ss
+  server: 202.50.253.63
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+  name: N017-496ms
 - type: ss
   server: 202.50.253.18
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  name: N025-1001ms
+  name: N018-496ms
+- type: ss
+  server: 202.50.253.45
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+  name: N019-496ms
 - type: vless
-  server: 198.16.113.219
+  server: 45.192.248.29
   port: 8443
-  uuid: e3e0e1c3-599e-4ae1-8ad4-d9e90effacc4
+  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
+  udp: true
+  tls: true
+  servername: github.githubassets.com
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
+    short-id: 4ad2e4e660550e43
+  client-fingerprint: chrome
+  name: N020-496ms
+- type: ss
+  server: 202.50.253.54
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+  name: N021-497ms
+- type: ss
+  server: 202.50.253.36
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+  name: N022-499ms
+- type: vmess
+  server: 172.64.80.1
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+  tls: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: true
+  name: N023-547ms
+- type: vmess
+  server: chatgpt.com
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+  tls: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: true
+  name: N024-550ms
+- type: vless
+  server: edge.bookmai.com
+  port: 443
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: mother-earth.fyi
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  client-fingerprint: chrome
+  name: N025-583ms
+- type: vless
+  server: 134.255.211.36
+  port: 443
+  uuid: c5f59ef3-9540-49fa-bd1e-c6c2f79df49a
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: sg-sin.probe.geomyip.com
+  skip-cert-verify: true
+  reality-opts:
+    public-key: KcI3PoYu2yF7whv-e0C7JnRyUoUiUDu6tOlUBPYYbCk
+    short-id: 2e96bf6afa823abb
+  client-fingerprint: chrome
+  name: N026-709ms
+- type: vless
+  server: 72.249.201.21
+  port: 21899
+  uuid: fb69a6b9-980c-48c2-a94f-5f95868a2d2a
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  skip-cert-verify: true
+  reality-opts:
+    public-key: kvLUYW6fwHXutu8Z4On6mi61kjslCyCc8ErFffUM1D0
+    short-id: dedce016e3671418
+  client-fingerprint: chrome
+  name: N027-999ms
+- type: ss
+  server: 46.17.46.27
+  port: 18443
+  cipher: aes-256-gcm
+  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  udp: true
+  name: N028-1056ms
+- type: hysteria2
+  server: 129.146.124.201
+  port: 51000
+  password: 1d491f8c-ccaa-43e1-b62d-f255c7832e27
+  sni: cn.cremedelamer.com
+  skip-cert-verify: true
+  udp: true
+  name: N029-1078ms
+- type: vmess
+  server: 47.244.120.197
+  port: 23026
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  udp: true
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+  name: N030-1940ms
+- type: vless
+  server: 198.16.113.220
+  port: 8443
+  uuid: eb6fbbdd-669b-4055-9379-4eeba938578a
   udp: true
   flow: xtls-rprx-vision
   tls: true
@@ -287,126 +352,170 @@ proxies:
     public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
     short-id: 69984b9e02545831
   client-fingerprint: chrome
-  name: N026-1227ms
-- type: vmess
-  server: seoul02.zgjok.com
-  port: 443
-  uuid: 1a1e5196-eab4-4772-9012-65c27f19a524
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: seoul02.zgjok.com
-  tls: true
-  servername: seoul02.zgjok.com
-  skip-cert-verify: true
-  name: N027-1481ms
+  name: N031-2112ms
 - type: vless
-  server: 13.140.80.136
-  port: 443
-  uuid: e07a6d05-f665-4811-91f0-9b3dc1094e4d
+  server: 198.16.113.221
+  port: 8443
+  uuid: 98a24806-141a-43d3-b094-bd66c4eb93b8
   udp: true
   flow: xtls-rprx-vision
   tls: true
-  servername: tradingview.com
+  servername: www.apple.com
   skip-cert-verify: true
   reality-opts:
-    public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
-    short-id: 8f3c6e2a1b5d4f09
-  client-fingerprint: firefox
-  name: N028-2172ms
-- type: vmess
-  server: 156.245.232.239
-  port: 35043
-  uuid: b15e481d-17e4-41a8-84c2-23d4f0514d9a
-  alterId: 0
-  cipher: auto
+    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
+    short-id: 69984b9e02545831
+  client-fingerprint: chrome
+  name: N032-2353ms
+- type: vless
+  server: 198.16.113.220
+  port: 8443
+  uuid: 98a24806-141a-43d3-b094-bd66c4eb93b8
   udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apple.com
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
+    short-id: 69984b9e02545831
+  client-fingerprint: chrome
+  name: N033-2834ms
+- type: vless
+  server: 60.248.219.53
+  port: 443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  udp: true
+  tls: true
+  servername: ty986gfazs.cainiaohub.xyz
+  skip-cert-verify: true
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: www.pubgmobile.com
-  name: N029-3454ms
+      Host: ty986gfazs.cainiaohub.xyz
+  name: N034-3295ms
+- type: vless
+  server: 59.125.69.23
+  port: 443
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  udp: true
+  tls: true
+  servername: ty986gfazs.cainiaohub.xyz
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
+  name: N035-3331ms
 - type: ss
-  server: 202.50.253.99
+  server: 202.50.253.72
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  name: N030-3990ms
+  name: N036-3730ms
+- type: vless
+  server: z1q3pv4g78.rucdncomp.pro
+  port: 443
+  uuid: c720cb74-4c84-4fce-b8ae-637dbaa16199
+  udp: true
+  tls: true
+  servername: z1q3pv4g78.rucdncomp.pro
+  skip-cert-verify: true
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /useraction/events/b892639b7195/
+    headers:
+      Host: z1q3pv4g78.rucdncomp.pro
+  name: N037-3739ms
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
-  - N001-123ms
-  - N002-177ms
-  - N003-202ms
-  - N004-287ms
-  - N005-290ms
-  - N006-413ms
-  - N007-418ms
-  - N008-423ms
-  - N009-424ms
-  - N010-426ms
-  - N011-458ms
-  - N012-477ms
-  - N013-480ms
-  - N014-560ms
-  - N015-572ms
-  - N016-648ms
-  - N017-729ms
-  - N018-805ms
-  - N019-848ms
-  - N020-860ms
-  - N021-861ms
-  - N022-864ms
-  - N023-950ms
-  - N024-995ms
-  - N025-1001ms
-  - N026-1227ms
-  - N027-1481ms
-  - N028-2172ms
-  - N029-3454ms
-  - N030-3990ms
+  - N001-71ms
+  - N002-121ms
+  - N003-156ms
+  - N004-229ms
+  - N005-232ms
+  - N006-301ms
+  - N007-320ms
+  - N008-334ms
+  - N009-347ms
+  - N010-383ms
+  - N011-409ms
+  - N012-455ms
+  - N013-488ms
+  - N014-493ms
+  - N015-494ms
+  - N016-494ms
+  - N017-496ms
+  - N018-496ms
+  - N019-496ms
+  - N020-496ms
+  - N021-497ms
+  - N022-499ms
+  - N023-547ms
+  - N024-550ms
+  - N025-583ms
+  - N026-709ms
+  - N027-999ms
+  - N028-1056ms
+  - N029-1078ms
+  - N030-1940ms
+  - N031-2112ms
+  - N032-2353ms
+  - N033-2834ms
+  - N034-3295ms
+  - N035-3331ms
+  - N036-3730ms
+  - N037-3739ms
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 100
   proxies:
-  - N001-123ms
-  - N002-177ms
-  - N003-202ms
-  - N004-287ms
-  - N005-290ms
-  - N006-413ms
-  - N007-418ms
-  - N008-423ms
-  - N009-424ms
-  - N010-426ms
-  - N011-458ms
-  - N012-477ms
-  - N013-480ms
-  - N014-560ms
-  - N015-572ms
-  - N016-648ms
-  - N017-729ms
-  - N018-805ms
-  - N019-848ms
-  - N020-860ms
-  - N021-861ms
-  - N022-864ms
-  - N023-950ms
-  - N024-995ms
-  - N025-1001ms
-  - N026-1227ms
-  - N027-1481ms
-  - N028-2172ms
-  - N029-3454ms
-  - N030-3990ms
+  - N001-71ms
+  - N002-121ms
+  - N003-156ms
+  - N004-229ms
+  - N005-232ms
+  - N006-301ms
+  - N007-320ms
+  - N008-334ms
+  - N009-347ms
+  - N010-383ms
+  - N011-409ms
+  - N012-455ms
+  - N013-488ms
+  - N014-493ms
+  - N015-494ms
+  - N016-494ms
+  - N017-496ms
+  - N018-496ms
+  - N019-496ms
+  - N020-496ms
+  - N021-497ms
+  - N022-499ms
+  - N023-547ms
+  - N024-550ms
+  - N025-583ms
+  - N026-709ms
+  - N027-999ms
+  - N028-1056ms
+  - N029-1078ms
+  - N030-1940ms
+  - N031-2112ms
+  - N032-2353ms
+  - N033-2834ms
+  - N034-3295ms
+  - N035-3331ms
+  - N036-3730ms
+  - N037-3739ms
 rules:
 - MATCH,PROXIES
